@@ -1,4 +1,5 @@
-FROM 188413075412.dkr.ecr.eu-west-2.amazonaws.com/geo/geoserver
+ARG AWS_ECR=
+FROM ${AWS_ECR}geo/geoserver
 
 #
 # Copy over data files
